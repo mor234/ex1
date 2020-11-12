@@ -14,7 +14,9 @@ double Power(double x , int y)
       return 0;
   }
     double ans=1;
-    int posY= (y>=0?y:-1*y) ;//positive value of y
+    int posY=y;//positive value of y
+    if (posY<0)
+        posY*=-1; 
    
         int i=0;
         while (i<posY)
@@ -23,7 +25,9 @@ double Power(double x , int y)
              i++;
         }
         if (y<0)
-        {return 1/ans;}
+        {
+            return 1/ans;
+        }
         else
         {
             return ans;
