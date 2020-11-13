@@ -16,7 +16,8 @@ mymathd: $(OBJECTS_LIB)
 mymaths: $(OBJECTS_LIB)
 	touch mymaths
 	$(AR) -rcs libmyMath.a $(OBJECTS_LIB)
-#Compile our library source code into positionindependent code
+
+#Compile our library source code into position independent code
 basicMath.o: basicMath.c myMath.h
 	$(CC) -Wall -fPIC -c  basicMath.c 
 power.o: power.c myMath.h
