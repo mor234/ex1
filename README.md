@@ -1,4 +1,4 @@
-# ex1
+# makefile , static and dynamic libraries
 This is a practice exercise in c, using makefile and creating static and dynamic libraries. 
 was done as a student assignment.
 
